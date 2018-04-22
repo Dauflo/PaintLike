@@ -136,7 +136,6 @@ public class ZoneDessin extends Component implements KeyListener, MouseListener,
 			Point pos = formes.get(i).getPos();
 			
 			if ((p.getY() >= pos.getY() + 40 && p.getY() <= pos.getY() + 40 + longueur) && (p.getX() >= pos.getX() && p.getX() <= pos.getX() + longueur)){
-				System.out.println("test");
 				Point goodPos = new Point((int) (p.getX() - formes.get(i).getSize() / 2), (int) (p.getY() - formes.get(i).getSize() / 2) - 40);
 				formes.get(i).setPos(goodPos);
 				break;
